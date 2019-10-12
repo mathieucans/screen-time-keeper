@@ -1,0 +1,30 @@
+{
+  "name": "screen-time-keeper",
+  "version": "1.0.0",
+  "description": "time keeper for children computer time",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron .",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --no-prune"
+  },
+  "keywords": [
+    "electron",
+    "timekeeper"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "*",
+    "chai": "*",
+    "electron": "^2.0.18",
+    "electron-packager": "^14.0.6",
+    "electron-shutdown-command": "0.0.8",
+    "mocha": "*",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
