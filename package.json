@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/mocha": "*",
     "chai": "*",
-    "electron": "^2.0.18",
+    "electron": "^9.4.0",
     "electron-packager": "^14.0.6",
     "electron-shutdown-command": "0.0.8",
     "mocha": "*",
